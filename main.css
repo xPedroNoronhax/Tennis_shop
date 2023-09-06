@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-blue{
+    background-color: #4DAFFA;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    background-color: #4DAFFA;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: #FAD334;
+    font-weight: bold;
+    padding: 16px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    padding: 8px;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FAD334;
+}
+
+.about{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.about img{
+    width: 50%;
+}
+
+.about-text h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: #2472AD;
+    border-bottom: 4px solid #2472AD;
+    margin-bottom: 10px;
+    padding: 8px ;
+}
+
+.product-list h2{
+    margin-top: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #2472AD;
+    border-bottom: 4px solid #2472AD;
+    margin-bottom: 10px;
+    padding: 8px ;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.products h3{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.products button{
+    font-size: 1em;
+    background-color: #4DAFFA;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        max-width: 90%;
+    }
+
+    header {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .product-list{
+        margin-top: 10px;
+    }
+
+    .product{
+        display: block;
+    }
+
+    .products button{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+    .container{
+        max-width: 90%;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about img{
+        width: 100%;
+    }
+
+    .product{
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: .5%;
+        text-align: center;
+    }
+
+    .products button{
+        margin: auto;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
